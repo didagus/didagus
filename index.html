@@ -1235,45 +1235,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       window.onload = init;    
   </script>
   <!-- Lazy load -->
-    
-  <!-- iubenda cookie banner -->
-  <script type="text/javascript">
-    var _iub = _iub || [];
-    _iub.csConfiguration = {"consentOnContinuedBrowsing":false,"cookiePolicyInOtherWindow":true,"countryDetection":true,"floatingPreferencesButtonDisplay":"bottom-right","gdprAppliesGlobally":false,"invalidateConsentWithoutLog":true,"perPurposeConsent":true,"siteId":2673269,"cookiePolicyId":15258299,"lang":"it","cookiePolicyUrl":"/cookie-policy", "banner":{ "acceptButtonDisplay":true,"closeButtonRejects":true,"customizeButtonDisplay":true,"explicitWithdrawal":true,"listPurposes":true,"position":"bottom" },
-                "callback": {
-            onPreferenceExpressedOrNotNeeded: function(preference) {
-                dataLayer.push({
-                    iubenda_ccpa_opted_out: _iub.cs.api.isCcpaOptedOut()
-                });
-                if (!preference) {
-                    dataLayer.push({
-                        event: "iubenda_preference_not_needed"
-                    });
-                } else {
-                    if (preference.consent === true) {
-                        dataLayer.push({
-                            event: "iubenda_consent_given"
-                        });
-                    } else if (preference.consent === false) {
-                        dataLayer.push({
-                            event: "iubenda_consent_rejected"
-                        });
-                    } else if (preference.purposes) {
-                        for (var purposeId in preference.purposes) {
-                            if (preference.purposes[purposeId]) {
-                                dataLayer.push({
-                                    event: "iubenda_consent_given_purpose_" + purposeId
-                                });
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    };
-    </script>
-    <script type="text/javascript" src="//cdn.iubenda.com/cs/iubenda_cs.js" charset="UTF-8" async></script>
-  <!-- iubenda cookie banner -->
   
   <script src="/js/underscore-min.js"></script>
   <script src="/js/moment.min.js"></script>
