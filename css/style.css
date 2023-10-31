@@ -580,8 +580,8 @@ a[title*="Hosted"] {
   display: none !important;
 }
 
-.iubenda-cs-brand-badge-outer {
-  order: unset !important;
+.iubenda-cs-brand-badge {
+  display: none !important;
 }
 	
 /* Media Queries */
