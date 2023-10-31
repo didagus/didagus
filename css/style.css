@@ -576,7 +576,7 @@ p.text-muted {
   margin-left: .3rem;
 }
 
-a[title*="Hosted"] {
+a[title*="Hosted"], .iubenda-cs-brand-badge-outer {
   display: none !important;
 }
 	
