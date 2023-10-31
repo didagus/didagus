@@ -576,8 +576,12 @@ p.text-muted {
   margin-left: .3rem;
 }
 
-a[title*="Hosted"], .iubenda-cs-brand-badge-outer {
+a[title*="Hosted"] {
   display: none !important;
+}
+
+.iubenda-cs-brand-badge-outer {
+  order: unset !important;
 }
 	
 /* Media Queries */
