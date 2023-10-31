@@ -580,13 +580,6 @@ a[title*="Hosted"] {
   display: none !important;
 }
 
-div.iub-toggle-checkbox input[type="checkbox"]:not(:checked), [type="checkbox"]:checked {
- position: initial !important;
- opacity: initial !important;
-background-color: initial !important;
-pointer-events: initial !important;
-}
-
 /* Media Queries */
 
 @media screen and (min-width: 576px) {
